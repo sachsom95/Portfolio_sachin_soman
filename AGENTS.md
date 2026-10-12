@@ -24,3 +24,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Editorial direction (2026-10-12): curate like a marketing team; include only what helps a visitor understand Sachin. Do not dump the CV, every project, or the full LinkedIn profile. Lead with Founding Engineer at Protex AI (confirmed on the signed-in profile), then selected personal work.
 
 - Default theme (2026-10-12): first-time visitors start in light mode, regardless of system appearance. Persist an explicitly selected light or dark theme; do not automatically follow OS theme changes.
+
+- Approved dark palette correction (2026-10-12): retain `#1A1717`, use neutral off-white type and warm-gray secondary text/dividers. Reserve muted gold for actions and sage for small illustration/chart details. Project artwork should share the hero's soft shaded pencil texture, without bright yellow-green contours. This supersedes the earlier cream/green-tinted neutral tokens.

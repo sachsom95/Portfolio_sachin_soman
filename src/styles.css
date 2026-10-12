@@ -28,17 +28,17 @@
   color-scheme: dark;
   --paper: #1a1717;
   --outside: #141212;
-  --ink: #f1eadb;
-  --muted: #bfc6b8;
-  --rule: #697368;
-  --rule-soft: #414e46;
-  --accent: #e8b768;
-  --link: #e8b768;
-  --link-rule: #a98a53;
-  --wash: #25332d;
-  --plot-dot: #aec88b;
-  --plot-line: #e8b768;
-  --focus: #edc485;
+  --ink: #eeebe6;
+  --muted: #b9b4ae;
+  --rule: #6c6560;
+  --rule-soft: #3d3835;
+  --accent: #d7af6f;
+  --link: #d7af6f;
+  --link-rule: #927548;
+  --wash: #252120;
+  --plot-dot: #93a38b;
+  --plot-line: #d7af6f;
+  --focus: #e2c28f;
 }
 * { box-sizing: border-box; }
 body { margin: 0; min-width: 320px; -webkit-font-smoothing: antialiased; }

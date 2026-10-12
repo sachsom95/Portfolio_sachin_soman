@@ -1,5 +1,20 @@
 # MVP design and functional verification
 
+## Dark palette refinement — 12 October 2026
+
+**Final result: passed.** Focused local visual check at `http://127.0.0.1:4187/`, using the built production output.
+
+- Source: approved Illustrated Folio composition and the user's subsequent `#1A1717` override. Before: `docs/qa/palette-dark-before.png` (live homepage, 1280 × 1957). After: `docs/qa/palette-dark-desktop.png` (1280 × 1957). Reviewed both images together; this is a palette/art-treatment change, not a pixel-identical recreation of the earlier green-background reference.
+- Preserved typography, spacing, component geometry, hierarchy, copy, and interactions. Replaced yellowish text with neutral off-white, green-tinted rules with warm gray, and bright yellow-green project contours with shaded pencil strokes. The hero is the artwork style reference.
+- First pass used `#625c57` rules. Raised these to `#6c6560` because the same token draws slider tracks; calculated contrast against the page is now 3.11:1. Off-white type is 14.98:1, secondary type 8.65:1, and gold links 8.70:1. These are token contrast checks, not a claim of a full accessibility audit.
+- Both project PNG masters have genuine transparent alpha and matching 1536 × 1024 dimensions; optimized WebP copies load successfully. No opaque rectangular backdrops or visible edge halos on the page.
+- Desktop 1280px and mobile 390px in both themes: no horizontal overflow, readable headings, clear links and chart controls. Dark state survives reload. Fresh local page opened in light; the theme toggle correctly selects the appropriate four artwork files. Light tokens, assets, layout and default-theme logic are unchanged.
+- `npm run build` passes. Browser error/warning log is empty for this verification. No outstanding visual defects found in the scoped change.
+
+Evidence: `docs/qa/palette-dark-desktop.png`, `docs/qa/palette-dark-mobile.png`, `docs/qa/palette-light-desktop.png`, `docs/qa/palette-light-mobile.png`. Prompts and asset paths: `docs/dark-art-refinement.md`.
+
+## Original MVP verification
+
 Date: 12 October 2026. Local production build at `http://127.0.0.1:4176/`.
 
 **Local result: passed.** Deployment is checked separately after publishing.

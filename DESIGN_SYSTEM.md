@@ -6,7 +6,7 @@ A personal portfolio with room to grow into a lab and a shelf of useful products
 
 - Layout: `docs/references/selected-layout.png` (the user's selected illustrated folio).
 - Light: **black and white**, explicitly confirmed on 12 October 2026. White paper, black typography, graphite artwork; no pastel accents.
-- Dark: `docs/references/dark-green-gold.png`, supplied on 12 October 2026. The user subsequently refined the page background to warm near-black `#1A1717`; keep warm ivory, muted sage, and gold.
+- Dark: `docs/references/dark-green-gold.png`, supplied on 12 October 2026. The user subsequently refined the page background to warm near-black `#1A1717`, then approved neutral off-white text and gray dividers, with muted sage and gold reserved for accents.
 - First-time visitors start in light mode. Remember an explicit theme choice; do not follow system appearance.
 - These are two themes of one site. Navigation, order, proportions, and content stay the same.
 
@@ -28,13 +28,15 @@ Use a centered page frame, fine rules, open space, and editorial columns. Avoid 
 
 Light tokens: white `#ffffff`, ink `#191919`, secondary copy `#626262`, rule `#777777`. Every visible image is grayscale in light mode.
 
-Dark tokens: near-black `#1a1717`, ivory `#f1eadb`, secondary copy `#bfc6b8`, gold `#e8b768`, sage chart points `#aec88b`. Gold guides actions and highlights; it is not a background for every component.
+Dark tokens: near-black `#1a1717`, off-white `#eeebe6`, secondary copy `#b9b4ae`, rule `#6c6560`, gold `#d7af6f`, sage chart points `#93a38b`. Supporting surfaces use neutral warm gray `#252120`. Gold guides actions and highlights; sage belongs in small illustrative and chart details. Keep text and structural rules free of a green or yellow cast.
 
 All tokens live in `src/styles.css`. Change a theme at that boundary, not in individual components.
 
 ## Artwork
 
 Generate illustrations as separate raster assets. Preserve generous transparent margins, natural graphite strokes, readable silhouettes, and a consistent pencil hand. Use the same scene in both themes; use dedicated dark variants when a simple tonal adjustment would make paper look like a negative.
+
+Dark project illustrations use broken pencil contours and hand shading, consistent with the hero. Avoid bright, uniform cream outlines or a neon blueprint effect. The October palette refinement's prompts and source assets are documented in `docs/dark-art-refinement.md`.
 
 The text, page layout, navigation, and chart remain real UI. Do not bake them into a page-sized image. Small handwritten labels that are part of the drawing may stay inside the artwork.
 
