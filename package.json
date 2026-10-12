@@ -1,43 +1,26 @@
 {
-  "name": "simplefolio",
-  "version": "1.0.1",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
-  "main": "index.js",
+  "name": "sachinsoman-v2",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cobidev/simplefolio"
-  },
-  "keywords": [],
-  "author": "Jacobo Martinez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cobidev/simplefolio/issues"
-  },
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
-  "devDependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.6.0",
-    "file-loader": "^6.0.0",
-    "html-loader": "^1.1.0",
-    "html-webpack-plugin": "^4.3.0",
-    "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.14.1",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "sass-loader": "^8.0.2",
-    "style-loader": "^1.2.1",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^4.2.2"
+    "dev": "vite",
+    "build": "vite build && node scripts/prerender.mjs && node scripts/prepare-sites-build.mjs",
+    "preview": "vite preview",
+    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "test": "node --test tests/signal.test.mjs"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1",
-    "tilt.js": "^1.2.1"
+    "@fontsource-variable/fraunces": "5.3.0",
+    "@fontsource-variable/inter": "5.3.0",
+    "@phosphor-icons/react": "2.1.10",
+    "@vitejs/plugin-react": "5.0.4",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "recharts": "3.10.1",
+    "vite": "6.4.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }
