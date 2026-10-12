@@ -7,6 +7,7 @@ A personal portfolio with room to grow into a lab and a shelf of useful products
 - Layout: `docs/references/selected-layout.png` (the user's selected illustrated folio).
 - Light: **black and white**, explicitly confirmed on 12 October 2026. White paper, black typography, graphite artwork; no pastel accents.
 - Dark: `docs/references/dark-green-gold.png`, supplied on 12 October 2026. The user subsequently refined the page background to warm near-black `#1A1717`; keep warm ivory, muted sage, and gold.
+- First-time visitors start in light mode. Remember an explicit theme choice; do not follow system appearance.
 - These are two themes of one site. Navigation, order, proportions, and content stay the same.
 
 ## Hierarchy

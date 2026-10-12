@@ -22,3 +22,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Latest dark refinement (2026-10-12): the user requested a blacker page, specifically `#1A1717`. This replaces the green charcoal background; gold, ivory, and subtle sage details remain.
 
 - Editorial direction (2026-10-12): curate like a marketing team; include only what helps a visitor understand Sachin. Do not dump the CV, every project, or the full LinkedIn profile. Lead with Founding Engineer at Protex AI (confirmed on the signed-in profile), then selected personal work.
+
+- Default theme (2026-10-12): first-time visitors start in light mode, regardless of system appearance. Persist an explicitly selected light or dark theme; do not automatically follow OS theme changes.

@@ -7,7 +7,7 @@ import { Artwork, ThemeContext } from './components/Artwork';
 
 function getTheme() {
   try { const saved = localStorage.getItem('sachin-theme'); if (saved === 'light' || saved === 'dark') return saved; } catch {}
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  return 'light';
 }
 
 export function App({ path = '/' }) {
@@ -25,12 +25,6 @@ export function App({ path = '/' }) {
     document.documentElement.dataset.theme = theme;
     document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#1a1717' : '#ffffff');
   }, [theme]);
-  useEffect(() => {
-    const media = window.matchMedia('(prefers-color-scheme: dark)');
-    const change = event => { let saved; try { saved = localStorage.getItem('sachin-theme'); } catch {} if (!saved) setTheme(event.matches ? 'dark' : 'light'); };
-    media.addEventListener('change', change);
-    return () => media.removeEventListener('change', change);
-  }, []);
   const toggleTheme = () => setTheme(current => { const next = current === 'light' ? 'dark' : 'light'; try { localStorage.setItem('sachin-theme', next); } catch {} return next; });
   return <ThemeContext.Provider value={theme}>
     <a className="skip-link" href="#main">Skip to content</a>
